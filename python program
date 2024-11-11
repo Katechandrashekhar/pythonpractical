@@ -1,0 +1,337 @@
+Python programs 
+1.Write a python program to perform the addition, subtraction, division, multiplication in two floating point numbers take input from keyboard.
+
+num1=input(“Enter the first floating point number”)
+num2=input(“Enter the second floating point number”)
+add= num1+num2
+print(“addition:”,add)
+sub= num1-num2
+print(“subtraction:”,sub)
+mul= num1*num2
+print(“multiplication:”,mul)
+div= num1/num2
+print(“division:”,div)
+
+2.WAP to calulate the area of circle.
+
+r=float(input(“Enter the radius:”))
+area=3.14*r*r
+print(“Area of circle:”,area)
+
+3.WAP to calculate average of two numbers print the deviation.
+
+num1=input(“Enter the first  number”)
+num2=input(“Enter the second number”)
+avg= num1+num2/2
+dev1=num1-avg
+dev2=num2-avg
+print(“Average “,avg)
+print(“deviation 1”,dev1)
+print(“deviation 2”,dev2)
+
+4.WAP to determine whether a person is eligible to vote .
+
+age=int(input(“Enter your age”)
+if age>=18:
+     print(“You are eligible for vote”)
+
+5.WAP to determine whether a person is eligible for vote or not, if is not eligible display how many years are left to be eligible.
+
+age=int(input(“Enter your age”)
+if age>=18:
+     print(“You are eligible for vote”)
+else:
+     left=18-age
+     print(“You left”,left”years to be eligible”)
+6.WAP to find the greatest number among two number.
+num1=input(“Enter the first  number”)
+num2=input(“Enter the second number”)
+if num1>num2:
+    print(“Largest number :”,num1)
+else:
+    print(“Largest number :”,num2)
+
+7.WAP to find whether given number is even or odd
+num=int(input(“Enter the  number”))
+if num%==0:
+     print(num,”is even)
+else:
+     print(num,”is odd”)
+
+8.WAP to find the greatest number among three numbers.
+
+a=int(input(“Enter the first  number”))
+b=int(input(“Enter the second  number”))
+c=int(input(“Enter the third  number”))
+
+if a>b and a>c:
+    print(a, “is greater”)
+if b>a and b>c:
+    print(b, “is greater”)
+if c>a and c>b:
+    print(c, “is greater”)
+
+9.WAP to check whether a number entered by the user is negative , positive or zero.
+num=int(input(“Enter the  number”))
+if num==0:
+     print(num,”is zero”)
+elif num>0:
+     print(num, “is positive”)
+else:
+     print(num, “is negative”)
+
+10.WAP to calculate sum and avg of first 10 number using while loop.
+
+i=0
+s=0
+while(i<=10):
+    s=s+i
+    i=i+1
+    avg=s/10
+print(“The sum is “,s)
+print(“The average is “,avg)
+
+11.WAP using for loop to calculate sum and average of first n natural number.
+n=int(input(“Enter value of n”))
+avg=0.0
+s=0
+for i in range (1,n+1):
+   s=s+1
+   avg=s/i
+print(“Sum =”,s)
+print(“Avearge=”,avg)
+
+12.WAP to print multiplication table of n where n is enter by user.
+n=int(input(“Enter number”))
+for i in range(1,11):
+    print(n*i)
+
+13.WAP to calculate factorial of number.
+ num=int(input(“Enter the  number”))
+if num<0:
+     print(“Factorial of negative number does not exist”)
+elif num==0 or num==1:
+     print(“The factorial of “,num”is 1)
+else:
+     for i in range (1,num+1);
+           fact*=i
+print(f”The factorial of “,num”is “,fact)
+
+14.WAP to implement all the methods of string.
+sample_text = "This is a sample text 123"
+capitalized = sample_text.capitalize()
+print(f"capitalize(): {capitalized}")
+
+casefolded = sample_text.casefold()
+print(f"casefold(): {casefolded}")
+
+centered = sample_text.center(30, '-')
+print(f"center(): {centered}")
+
+count_occur = sample_text.count('a')
+print(f"count('a'): {count_occur}")
+
+find_index = sample_text.find('is')
+print(f"find('is'): {find_index}")
+try:
+    index_position = sample_text.index('is')
+    print(f"index('is'): {index_position}")
+except ValueError:
+    print("Substring not found")
+
+is_alnum = sample_text.isalnum()
+print(f"isalnum(): {is_alnum}")
+
+is_alpha = sample_text.isalpha()
+print(f"isalpha(): {is_alpha}")
+
+is_ascii = sample_text.isascii()
+print(f"isascii(): {is_ascii}")
+
+is_lower = sample_text.islower()
+print(f"islower(): {is_lower}")
+
+lower_case = sample_text.lower()
+print(f"lower(): {lower_case}")
+
+is_upper = sample_text.isupper()
+print(f"isupper(): {is_upper}")
+
+upper_case = sample_text.upper()
+print(f"upper(): {upper_case}")
+
+joined = '-'.join(['Python', 'is', 'fun'])
+print(f"join(): {joined}")
+
+replaced = sample_text.replace('is', 'was')
+print(f"replace('is', 'was'): {replaced}"
+
+15.WAP to implement Slicing operators in list.
+def list_slicing_demo(lst):
+    # Original list
+    print(f"Original list: {lst}")
+    
+    # Slicing a portion of the list [start:end]
+    slice1 = lst[2:6]
+    print(f"lst[2:6]: {slice1}")
+    
+    # Slicing from the beginning to a specific index [:end]
+    slice2 = lst[:4]
+    print(f"lst[:4]: {slice2}")
+    
+    # Slicing from a specific index to the end [start:]
+    slice3 = lst[3:]
+    print(f"lst[3:]: {slice3}")
+    
+    # Slicing with negative index
+    slice4 = lst[-5:-1]
+    print(f"lst[-5:-1]: {slice4}")
+    
+    # Slicing with step [start:end:step]
+    slice5 = lst[1:7:2]
+    print(f"lst[1:7:2]: {slice5}")
+    
+    # Reversing the list with slicing [::-1]
+    reversed_list = lst[::-1]
+    print(f"Reversed list: {reversed_list}")
+    
+    # Reversing with step
+    reverse_step = lst[6:2:-1]
+    print(f"lst[6:2:-1]: {reverse_step}")
+
+16.WAP to implement List methods
+def list_methods_demo():
+    lst = [10, 20, 30, 40, 50]
+    print(f"Original list: {lst}")
+    
+    lst.append(60)
+    print(f"After append(60): {lst}")
+    
+    lst.extend([70, 80])
+    print(f"After extend([70, 80]): {lst}")
+    
+    lst.remove(30)
+    print(f"After remove(30): {lst}")
+    
+    popped_element = lst.pop(2)
+    print(f"After pop(2) (removed {popped_element}): {lst}")
+    
+    index_of_50 = lst.index(50)
+    print(f"Index of 50: {index_of_50}")
+    
+    count_of_20 = lst.count(20)
+    print(f"Count of 20: {count_of_20}")
+    
+    lst.sort()
+    print(f"After sort(): {lst}")
+    
+    lst.reverse()
+    print(f"After reverse(): {lst}")
+    
+    copied_list = lst.copy()
+    print(f"Copied list: {copied_list}")
+    
+    lst.clear()
+    print(f"After clear(): {lst}")
+
+list_methods_demo() 
+17.WAP to implement Tuple methods.
+tup = (10, 20, 30, 40, 50, 20)
+print(f"Original tuple: {tup}")
+
+count_of_20 = tup.count(20)
+print(f"Count of 20: {count_of_20}")
+
+index_of_30 = tup.index(30)
+print(f"Index of 30: {index_of_30}")
+
+element_at_2 = tup[2]
+print(f"Element at index 2: {element_at_2}")
+
+slice_of_tuple = tup[1:4]
+print(f"Slice of tuple [1:4]: {slice_of_tuple}")
+
+18.WAP to implement the Set methods.
+s = {10, 20, 30, 40, 50}
+print(f"Original set: {s}")
+
+s.add(60)
+print(f"After add(60): {s}")
+
+popped_element = s.pop()
+print(f"After pop() (removed {popped_element}): {s}")
+
+copied_set = s.copy()
+print(f"Copied set: {copied_set}")
+
+set2 = {30, 40, 70}
+difference_set = s.difference(set2)
+print(f"Difference with {set2}: {difference_set}")
+
+s.discard(20)
+print(f"After discard(20): {s}")
+
+intersection_set = s.intersection(set2)
+print(f"Intersection with {set2}: {intersection_set}")
+
+disjoint_check = s.isdisjoint(set2)
+print(f"Is disjoint with {set2}: {disjoint_check}")
+
+subset_check = s.issubset(copied_set)
+print(f"Is subset of copied_set: {subset_check}")
+
+s.remove(30)
+print(f"After remove(30): {s}")
+
+union_set = s.union(set2)
+print(f"Union with {set2}: {union_set}")
+
+s.update(set2)
+print(f"After update with {set2}: {s}")
+
+s.clear()
+print(f"After clear(): {s}")
+
+19.WAP to implement Dictionary methods.
+d = {'a': 1, 'b': 2, 'c': 3}
+print(f"Original dictionary: {d}")
+
+copied_dict = d.copy()
+print(f"Copied dictionary: {copied_dict}")
+
+keys = ['x', 'y', 'z']
+fromkeys_dict = dict.fromkeys(keys, 0)
+print(f"Dictionary fromkeys: {fromkeys_dict}")
+
+value_of_b = d.get('b')
+print(f"Value of key 'b': {value_of_b}")
+
+dict_items = d.items()
+print(f"Items in dictionary: {dict_items}")
+
+dict_keys = d.keys()
+print(f"Keys in dictionary: {dict_keys}")
+
+popped_value = d.pop('a')
+print(f"After pop('a') (removed {popped_value}): {d}")
+
+popped_item = d.popitem()
+print(f"After popitem() (removed {popped_item}): {d}")
+
+d.update({'d': 4, 'e': 5})
+print(f"After update: {d}")
+
+dict_values = d.values()
+print(f"Values in dictionary: {dict_values}")
+
+d.setdefault('f', 6)
+print(f"After setdefault('f', 6): {d}")
+
+d.clear()
+print(f"After clear(): {d}")
+
+
+20.WAP to create a list with duplicate values and convert it into set.
+my_list=[1,2,3,4,2,3,2,7]
+my_set=set(my_list)
+print(my_set)
